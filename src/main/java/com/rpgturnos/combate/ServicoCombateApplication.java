@@ -1,4 +1,4 @@
-package com.rpgturnos.servico_combate;
+package com.rpgturnos.combate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
