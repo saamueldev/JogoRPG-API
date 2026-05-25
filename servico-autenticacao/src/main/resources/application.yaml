@@ -2,15 +2,13 @@ spring:
   application:
     name: servico-autenticacao
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/db_autenticacao
-    username: postgres
-    password: postgres
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  profiles:
+    active: local
 
 server:
   port: 8080
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:U1VQRVJfU0VDUkVUX0pXVF9LRVlfUEFSQV9ERVZfUkVQT1NfTVVERV9FTV9QUk9EVUNBTw==}
+    expiracao-ms: 86400000
